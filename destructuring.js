@@ -23,6 +23,8 @@ var carDetails = {
 
 //Code Here
 
+let { color, make, model, year } = carDetails
+
 
 
 ////////// PROBLEM 2 //////////
@@ -33,9 +35,10 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
+function greeting(obj) {
   //Code Here
-  
+  let { firstName, lastName, title } = obj
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -55,19 +58,27 @@ function greeting( obj ) {
 
 //Code Here
 
+let totalPopulation = obj => {
+  let { utah, california, texas, arizona } = obj
+  return utah + california + texas + arizona
+}
+
+console.log(totalPopulation)
 
 
 ////////// PROBLEM 4 //////////
 
 /*
-  Write a function called ingredients that will take in an object. 
-  This object will have 3 properties named carb, fat, and protein. 
-  The property values will be strings. 
-  Use object destructuring to save the property values to new variables. 
-  Push these new variables to an array and return the array. 
+  Write a function called ingredients that will take in an object.
+  This object will have 3 properties named carb, fat, and protein.
+  The property values will be strings.
+  Use object destructuring to save the property values to new variables.
+  Push these new variables to an array and return the array.
 */
 
 //Code Here
+
+
 
 
 
