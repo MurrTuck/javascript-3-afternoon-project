@@ -77,9 +77,10 @@ console.log(totalPopulation)
 */
 
 //Code Here
-
-
-
+let ingredients = obj => {
+  let { carb, fat, protein } = obj
+  return [carb, fat, protein]
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -97,8 +98,17 @@ console.log(totalPopulation)
 */
 
 //Code Here
+let largeNumbers = ({ first, second, third }) => {
+  if (first < second && first < third) {
+    return first
+  } else if (second < first && second < third) {
+    return second
+  } else {
+    return third
+  }
+}
 
-
+console.log(largeNumbers)
 
 ////////// PROBLEM 6 //////////
 
@@ -110,4 +120,12 @@ console.log(totalPopulation)
 
 //Code Here
 
-
+let numberGroups = ({ a, b, c }) => {
+  if (a.length > b.length && a.length > c.length) {
+    return a
+  } else if (b.length > a.length && b.length > c.length) {
+    return b
+  } else {
+    return c
+  }
+}
