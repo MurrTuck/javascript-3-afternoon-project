@@ -109,6 +109,7 @@ let secrets = (obj) => {
   for (let key in obj) {
     if (key.startsWith('sh')) {
       vString += obj[key]
+      // vString = vString + obj[key]
     }
   }
   return vString
