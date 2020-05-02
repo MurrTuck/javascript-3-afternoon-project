@@ -11,25 +11,25 @@
   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
 */
 
-// var values = {
-//   one: 'These',
-//   two: ' are',
-//   three: ' the',
-//   four: ' property',
-//   five: ' values.'
-// } 
+var values = {
+  one: 'These',
+  two: ' are',
+  three: ' the',
+  four: ' property',
+  five: ' values.'
+}
 
-// for(var key in values) {
-//   console.log(values[key])
-// }
+for (var key in values) {
+  console.log(values[key])
+}
 
 /*
   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
 */
 
-// for(var key in values) {
-//   console.log(key)
-// }
+for (var key in values) {
+  console.log(key)
+}
 
 
 
@@ -39,15 +39,16 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues(obj) {
-  let rString = ""
+let showValues = (obj) => {
+  let newString = ""
+  // console.log(rString)
   for (let key in obj) {
-    rString = rString + obj[key]
+    newString = newString + obj[key]
   }
-  return rString
+  return newString
 }
 
-console.log(showValues(andrewObj))
+// console.log(showValues('Murray'))
 
 
 
@@ -61,6 +62,15 @@ console.log(showValues(andrewObj))
 
 //Code Here
 
+let greaterThan10 = (obj) => {
+  for (let key in obj) {
+    if (obj[key] > 10)
+      obj[key] = 0
+
+  }
+  return obj
+}
+
 
 
 ////////// PROBLEM 3 //////////
@@ -73,7 +83,15 @@ console.log(showValues(andrewObj))
 
 //Code Here
 
+let double = (obj) => {
+  for (let key in obj) {
+    obj[key] = obj[key] * 2
+  }
+  return obj
+}
 
+
+console.log(double)
 
 ////////// PROBLEM 4 //////////
 
@@ -86,6 +104,15 @@ console.log(showValues(andrewObj))
 */
 
 //Code Here
+let secrets = (obj) => {
+  vString = ""
+  for (let key in obj) {
+    if (key.startsWith('sh')) {
+      vString += obj[key]
+    }
+  }
+  return vString
+}
 
 
 
