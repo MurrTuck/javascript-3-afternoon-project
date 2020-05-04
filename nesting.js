@@ -51,7 +51,6 @@ var employees = [
 */
 
 //Code Here
-
 let employeeUpdater = () => {
   let newArr = employees.reduce((acc, element) => {
     if (element.firstName === 'Theo') {
@@ -83,7 +82,6 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
-
 let removeDuplicates = () => {
   for (let i = 0; i < workplaceAccidents.length; i++) {
     for (let j = workplaceAccidents.length; j > i; j--) {
@@ -94,6 +92,7 @@ let removeDuplicates = () => {
   }
   return workplaceAccidents
 }
+
 
 ////////// PROBLEM 3 //////////
 
@@ -162,13 +161,11 @@ var myCar = {
 */
 
 //Code Here
-
 let recordCleaner = () => {
   for (let i = 0; i < myCar.accidents.length; i++) {
     myCar.accidents[i].atFaultForAccident = false
   }
 }
-
 
 
 ////////// PROBLEM 5 //////////
@@ -187,7 +184,6 @@ var numsArr = [[1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
-
 let looper = () => {
   for (let i = 0; i < numsArr.length; i++) {
     for (let j = 0; j < numsArr[i].length; j++) {
@@ -196,3 +192,4 @@ let looper = () => {
   }
   return numsArr
 }
+
