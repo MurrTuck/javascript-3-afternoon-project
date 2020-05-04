@@ -63,11 +63,11 @@ let showValues = (obj) => {
 //Code Here
 
 let greaterThan10 = (obj) => {
-  for (let key in obj) {
-    if (obj[key] > 10)
+  for (let key in obj)
+    if (obj[key] > 10) {
       obj[key] = 0
 
-  }
+    }
   return obj
 }
 
@@ -204,7 +204,7 @@ let startsWithK = (obj) => {
   return obj
 }
 
-console.log(obj)
+// console.log(obj)
 
 
 ////////// PROBLEM 8 //////////
@@ -223,10 +223,10 @@ console.log(obj)
 
 let hiddenTreasure = (obj) => {
   for (let key in obj) {
-    console.log(obj)
+    // console.log(obj)
     if (!obj[key].includes('treasure')) {
       delete obj[key]
     }
   }
-  return obj;
+  return obj
 }
